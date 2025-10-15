@@ -3,14 +3,15 @@ This Python script processes a CSV file containing COVID-19-related data and ide
 
 How It Works:
 Reads the file and strips whitespace.
-Parses the data rows and extracts:
-State code
-Death count
+Parses the data rows and extracts: 
+State code,
+Death count.
+
 Handles missing or malformed values:
-Missing death counts are treated as 0
-Ignores rows with incomplete data
-Aggregates total deaths per state.
-Sorts states by death count in descending order.
+Missing death counts are treated as 0,
+Ignores rows with incomplete data,
+Aggregates total deaths per state,
+Sorts states by death count in descending order,
 Returns the top 5 states.
 
 Example Usage
@@ -20,7 +21,7 @@ python top_states_by_deaths.py
 
 You’ll see output like:
 Top 5 States by COVID-19 Death Count
-==================================================
+
 NY: 58,743 deaths
 CA: 53,221 deaths
 TX: 47,890 deaths
